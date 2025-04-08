@@ -1,0 +1,106 @@
+# =========================
+# ✅ 每个站点都必须定制的字段（已改为孟加拉国本地化）
+# =========================
+baseURL = "https://baoliba.pw/"
+languageCode = "bn"
+languageName = "বাংলা"
+defaultContentLanguage = "bn"
+title = "BaoLiba 🇧🇩"
+theme = "LoveIt"
+
+[params]
+
+  # ✅ SEO 设置
+  title = "BaoLiba - বাংলাদেশের ব্র্যান্ড এবং ইনফ্লুয়েন্সারদের বিশ্বব্যাপী সংযুক্ত করে"
+  description = "BaoLiba একটি ক্রস-বর্ডার ইনফ্লুয়েন্সার প্ল্যাটফর্ম যা বিশ্বের ৫০+ দেশে স্থানীয় নির্মাতাদের সাথে গ্লোবাল ব্র্যান্ডগুলিকে সংযুক্ত করে।"
+  keywords = ["ইনফ্লুয়েন্সার মার্কেটিং", "BaoLiba", "গ্লোবাল নির্মাতা", "ক্রস-বর্ডার ই-কমার্স"]
+
+  # ✅ 顶部 Logo
+  [params.header.title]
+    name = "BaoLiba - বাংলাদেশের ব্র্যান্ড এবং ইনফ্লুয়েন্সারদের বিশ্বব্যাপী সংযুক্ত করে"
+    pre = ""
+    post = ""
+    typeit = false
+
+  # ✅ 应用外观（PWA）
+  [params.app]
+    title = "BaoLiba 🇧🇩"
+    svgFavicon = "favicon.png"
+    noFavicon = false
+    themeColor = "#ffffff"
+    iconColor = "#5bbad5"
+    tileColor = "#da532c"
+
+  # ✅ 样式控制
+  defaultTheme = "light"
+  disableThemeSwitch = true
+  customCSS = ["css/extended.css"]
+
+  # ✅ 站点图标
+  [params.assets]
+    favicon = "/favicon.png"
+
+  # ✅ 页脚内容
+  [params.footer]
+    enable = true
+    hugo = false
+    author = false
+    copyright = false
+    since = 2025
+    custom = '''
+    <div class="footer-links">
+      <a href="https://baoliba.com/" target="_blank" rel="noopener">BaoLiba</a> |
+      <a href="/about/">সম্পর্কে</a> |
+      <a href="/privacy-policy/">প্রাইভেসি পলিসি</a> |
+      <a href="/terms-of-use/">ব্যবহারের শর্তাবলী</a> |
+      <a href="/contact-us/">যোগাযোগ করুন</a>
+    </div>
+    '''
+
+  # ✅ 页面设置
+  [params.page]
+    author = false
+    layout = "post"
+
+# =========================
+# ✅ 通用配置（所有站点都可共用，无需修改）
+# =========================
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+canonifyURLs = true
+uglyURLs = false
+
+[markup.highlight]
+  noClasses = false
+
+[frontmatter]
+  format = "yaml"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+
+
+
+
+
+
+
+
